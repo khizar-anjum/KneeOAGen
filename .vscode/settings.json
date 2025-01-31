@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "${env:CONDA_PREFIX}/envs/mlflow/bin/python",
+    "python.analysis.extraPaths": ["${workspaceFolder}"],
+    "python.analysis.typeCheckingMode": "basic",
+    "jupyter.notebookFileRoot": "${workspaceFolder}"
+} 
