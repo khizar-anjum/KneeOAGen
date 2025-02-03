@@ -2,3 +2,5 @@ mnist/
 .env
 unconditional_kneeOA/
 conditional_kneeOA/
+.ipynb_checkpoints/
+figs/

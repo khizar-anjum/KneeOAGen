@@ -1,7 +1,0 @@
-things to focus on in the analysis
-
-- the grading criterion is quite vague, the consequences for grading something to its nearby grades are far less than grading it to a faraway grade -- which would be very consequential
-- no fatigue problem as in with physicians. 
-- accuracy / confidence score? can we do something similar?
-- preprocessing is needed before quantification as the zoom and the resolution would not be consistent. 
-- 
