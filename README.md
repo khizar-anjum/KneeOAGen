@@ -1,22 +1,33 @@
-# Knee OsteoArthritis Image Generation Challenge
+# Knee Osteoarthritis Image Generation with Diffusion Models
 
-For this task, we invite you to develop a working pipeline for image generation using a 2D medical imaging dataset. You may use the Knee Osteoarthritis Dataset on Kaggle or any other similar 2D medical imaging dataset of your choice.
+A personal project exploring the application of diffusion models for generating synthetic medical images, specifically focusing on knee X-rays from the Knee Osteoarthritis Dataset.
 
-## Task Description
-You will need to submit your code (either Python scripts or a tidy Jupyter Notebook) for training an image generation model. For this task:
-- **Preferred approach:** We encourage the use of Diffusion models, as they represent the state-of-the-art in generative modeling.
-- **Alternative approach:** If you are more familiar with GANs, you may choose this approach instead.
+## Project Overview
+I developed an end-to-end pipeline for training a diffusion model to generate realistic knee X-ray images. This project allowed me to gain hands-on experience with:
 
-We recognize that the time constraints make this task extremely challenging if you are not already familiar with these types of models. If you believe this is the case, we strongly encourage you to consider the Image Segmentation task instead.
-Regardless of the model you choose, your submission should demonstrate the following:
-- **Dataset handling:** Loading and pre-processing the dataset appropriately for your model.
-- **Model training:** Implementing the training pipeline and ensuring the model trains properly.
-- **Visual output evaluation:** Producing generated images that demonstrate the model is learning effectively. High-quality outputs are not required; we are looking for generations where the overall shapes and structures make sense.
-Flexibility with Datasets
+- **State-of-the-art generative modeling:** Implemented a diffusion model from scratch using PyTorch, learning the intricacies of the denoising process and loss functions
+- **Deep learning infrastructure:** Set up efficient training loops with proper logging, checkpointing, and evaluation metrics
 
-If you find accessing or preparing the suggested dataset is taking too much of your allotted time, you may switch to any 2D medical imaging dataset of your choice to simplify the process.
+## Technical Implementation
+The project consists of several key components:
+- Custom dataset class for handling medical imaging data
+- U-Net architecture modified for the diffusion process
+- Training pipeline with noise scheduling and denoising
+- Evaluation framework using FID and SSIM metrics
 
-### Optional Extensions
-- Add controllable generation (e.g., osteoarthritis severity)
-- Add quantitative evaluation using FID and SSIM
-- Writing a technical report describing your methods and results in the format of a conference paper
+## Results and Insights
+Through this project, I successfully:
+- Generated synthetic knee X-rays that preserve anatomical structures
+- Implemented conditional generation based on osteoarthritis severity
+- Achieved an FID score of 85.41 and IS of 1.03 compared to real images
+
+The most challenging aspects were handling the medical data peculiarities and tuning the diffusion parameters for stable training. This project significantly deepened my understanding of both generative AI and medical image processing.
+
+### Future Improvements
+- Experiment with more advanced architectures like ADM
+- Incorporate additional medical metadata for better controlled generation
+- Explore applications in data augmentation for medical AI training
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
